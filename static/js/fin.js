@@ -11,25 +11,15 @@ $(function(){
                     label: '코로나 확진자',
                     data: data.dailydecide,
                     backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
+                        'skyblue'
                     ],
                     borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
+                        'skyblue'
                     ],
                     borderWidth: 4
                 }]
-            }//shapeChartData
-            createChart();
+            }
+            barChart();
 
         },
         error:function(){
@@ -39,7 +29,7 @@ $(function(){
 });//function
 
 //차트 그리기
-function createChart() {
+function barChart() {
 
     var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
@@ -56,4 +46,53 @@ function createChart() {
         }
     });
 }//createChart 
+function lineChart() {
+
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: shapeChartData,
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+}//createChart
+
+
+$("#fstock1btn").click(function(){
+    alert('성공')
+    var code = $("#fstock1").val()
+    alert(code)
+    $.ajax({
+        url:"/fin/code_data",
+        type:"GET",
+        data:{'code':code},
+        dataType:"json",
+        success:function(data){
+            shapeChartData = {
+                labels: data.codedate,
+                datasets: [{
+                    label: '주식데이터',
+                    data: data.codeclose,
+                    backgroundColor: [
+                        'skyblue'
+                    ],
+                    borderColor: [
+                        'skyblue'
+                    ],
+                    borderWidth: 4
+                }]
+            }
+            lineChart();
+        },error:function(){
+            alert("실패");
+        }
+    })
+})
 })
