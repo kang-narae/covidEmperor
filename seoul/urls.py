@@ -3,5 +3,5 @@ from . import views
 
 app_name = 'seoul'
 urlpatterns = [
-    path('sview/', views.sview, name='sview'),
+    path('sview/', views.chart, name='sview'),
 ]

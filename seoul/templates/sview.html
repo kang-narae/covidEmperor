@@ -6,6 +6,20 @@
 <!--요기 아래 블럭 속에 쓰면 메인 홈페이지에 바로 나옴-->
 {% block seoul-block %} 
 <div>
+     <!--여기에 내용물 쓰면 됨-->
+     <h1>차트보여주기</h1>
+    {% if chart %}
+        {% for t in chart %}
+        <ul>
+            <td>자치구:{{t.location}}</td>
+            <td>2-6월:{{t.month}}</td>
+            <td>7월:{{t.month7}}</td>
+            <td>8월:{{t.month8}}</td>
+            <td>9월:{{t.month9}}</td>
+            <td>10월:{{t.month10}}</td>
+        </ul>
+        {% endfor %}
     
+    {% endif %} 
 </div>
 {% endblock seoul-block %}
