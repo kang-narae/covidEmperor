@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covidiamond</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fin.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div>
+        <header>
+            <div>
+                <nav class="topMenu">
+                    <ul>
+                        <li id="topMenu"><a href="{% url 'main' %}">Covidiamond</a></li>
+                        <li><a href="{% url 'seoul:sview' %}">Seoul</a></li>
+                        <li><a href="{% url 'fin:plot' %}">Finance</a></li>
+                        <li><a href="#">Board</a>
+                            <ul>
+                                <li><a href="#">jw Board</a></li>
+                                <li><a href="{% url 'board1:bList' %}">hj Board</a></li>
+                                <li><a href="#">sc Board</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <!--메인페이지 필드-->
+        {% block main-block %} 
+        {% endblock main-block %}
+
+        <!--재욱 필드-->
+        {% block jw-block %} 
+        {% endblock jw-block %}
+
+        <!--혜정 필드-->
+        {% block hj-block %} 
+        {% endblock hj-block %}
+
+        <!--서울 필드-->
+        {% block seoul-block %} 
+        {% endblock seoul-block %}
+
+        <!--주식 필드-->
+        {% block fin-block %} 
+        {% endblock fin-block %}
+
+
+        <footer>
+            <div class="foot">
+                <div class="logo">
+                    <a>(주)황제</a>
+                </div>
+                <span class="spanbox">
+                    <div>Web : 김재욱, 박혜정, 유승찬</div>
+                    <div>Seoul : 이승채, 최하진</div>
+                    <div>Finance : 강나래, 김수찬</div>
+                </span>
+                <span class="spanbox">
+                    <div>08390 서울 구로구 디지털로26길 111</div>
+                    <div>서울디지털인재개발원</div>
+                    <div>02) 581 - 2293 </div>
+                </span> 
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

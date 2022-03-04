@@ -1,0 +1,66 @@
+* {margin : 0; padding : 0;}
+        #fbody{
+            margin:0 auto;
+            width:80%; border:1px solid black;
+            margin-top: 200px;
+
+        }
+        #fhead{
+            width:70%; border:1px solid green;
+            margin:0 auto;
+            height: 200px;
+        }
+        #ftitle{
+            width:80%; border:1px solid red;
+            height: 100px;
+
+        }
+        #finfo{
+            width:80%; border:1px solid pink;
+            height: 100px;
+            float: left;
+        }
+        #freset{
+            width:10%; border:1px solid pink;
+            height: 30px;
+            float: right;
+            margin-top: 50px;
+        }
+        #fmain{
+            width:100%; border:1px solid red;
+            height: 600px;
+            margin:0 auto;
+            clear: both;
+        }
+        #fstock{
+            width:15%; border:1px solid green;
+            height: 250px;
+            float: left;
+            margin-top: 120px;
+        }
+        #fchart{
+            width:69%; border:1px solid orange;
+            height: 500px;
+            float: left;
+        }
+        #fcovid{
+            width:15%; border:1px solid black;
+            height: 250px;
+            float: right;
+            margin-top: 120px;
+        }
+        #ftext{
+            width:70%; border:1px solid blue;
+            height: auto;
+            margin:0 auto;
+        }
+        #fimage{
+            width:80%; border:1px solid green;
+            height: 500px;
+            margin:0 auto;
+        }
+        #fimagerow{
+            width:100%; border:1px solid yellow;
+            height: 300px;
+            margin:0 auto;
+        }
