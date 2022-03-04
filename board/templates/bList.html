@@ -1,27 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
-
-
-
 <!--요기 아래 블럭 속에 쓰면 메인 홈페이지에 바로 나옴-->
-{% block hj-block %} 
-{% load static %}
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>게시판</title>
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap&subset=korean" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-  <link rel="stylesheet" href="{% static 'css/jw_style.css'%}">
-  <link rel="stylesheet" href="{% static 'css/jw_blist.css'%}">
-  <script>
-
-  </script>
-</head>
-<body>
+{% block hj-block %}
 <section>
     <h1>공지사항</h1>
     <div class="wrapper">
@@ -103,8 +83,11 @@
       {% endif %}
     </ul>
 
-    <a href="{% url 'board:bwrite'%}"><div class="write">쓰기</div></a>
+    {% comment %} <a href="{% url 'board:bwrite'%}"><div class="write">쓰기</div></a> {% endcomment %}
   </section>
 
-</body>
-</html>
+
+
+
+
+{% endblock hj-block %}
