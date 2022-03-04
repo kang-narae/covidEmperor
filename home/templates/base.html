@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
     <div>
         <header>
             <div>
@@ -35,25 +34,29 @@
         </header>
 
 
-        <!--메인페이지 필드-->
-        {% block main-block %} 
-        {% endblock main-block %}
-
-        <!--재욱 필드-->
-        {% block jw-block %} 
-        {% endblock jw-block %}
-
-        <!--혜정 필드-->
-        {% block hj-block %} 
-        {% endblock hj-block %}
-
-        <!--서울 필드-->
-        {% block seoul-block %} 
-        {% endblock seoul-block %}
-
-        <!--주식 필드-->
-        {% block fin-block %} 
-        {% endblock fin-block %}
+        <div class="main">
+            <!--메인페이지 필드-->
+            {% block main-block %} 
+            {% endblock main-block %}
+    
+            <!--재욱 필드-->
+            {% block jw-block %} 
+            {% endblock jw-block %}
+    
+            <!--혜정 필드-->
+            {% block hj-block %} 
+            {% endblock hj-block %}
+    
+            <!--서울 필드-->
+            {% block seoul-block %} 
+            {% endblock seoul-block %}
+    
+            <!--주식 필드-->
+            {% block fin-block %} 
+            {% endblock fin-block %}
+        </div>
+        
+        
 
 
         <footer>

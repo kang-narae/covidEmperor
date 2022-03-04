@@ -41,8 +41,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home.apps.HomeConfig',
     'board1',
-    'board2',
-    'board3',
     'seoul',
     'fin',
 ]

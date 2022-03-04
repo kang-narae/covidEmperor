@@ -5,40 +5,41 @@
 
 <!--요기 아래 블럭 속에 쓰면 메인 홈페이지에 바로 나옴-->
 {% block hj-block %} 
-<div class="main">
     <p id="boardTitle">N O T I C E</p>
-    <table>
-        <colgroup>
-            <col width="15%">
-            <col width="45%">
-            <col width="25%">
-            <col width="15%">
-        </colgroup>
-        <thead>
-            <tr>
-                <th>번호</th>
-                <th>제목</th>
-                <th>등록일</th>
-                <th>조회수</th>
-            </tr>
-        </thead>
-        <!--게시글 등록부분-->
-        <tbody>
-            {% if bList %}
-                {% for board in bList %}
-                    <tr>
-                        <td>{{board.b_no}}</td>
-                        <td>{{board.b_title}}</td>
-                        <td>{{board.b_date|date:'Y-m-d H:i'}}</td>
-                        <td>{{board.b_hit}}</td>
-                    </tr>
-                {% endfor %}
-            {% else %}
+    <div class="tSpace">
+        <table>
+            <colgroup>
+                <col width="15%">
+                <col width="45%">
+                <col width="25%">
+                <col width="15%">
+            </colgroup>
+            <thead>
                 <tr>
-                    <td colspan='4'>등록된 게시물이 없습니다.</td>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>등록일</th>
+                    <th>조회수</th>
                 </tr>
-            {% endif %}
-        </tbody>
-    </table>
-</div>
+            </thead>
+            <!--게시글 등록부분-->
+            <tbody>
+                {% if bList %}
+                    {% for board in bList %}
+                        <tr>
+                            <td>{{board.b_no}}</td>
+                            <td>{{board.b_title}}</td>
+                            <td>{{board.b_date|date:'Y-m-d H:i'}}</td>
+                            <td>{{board.b_hit}}</td>
+                        </tr>
+                    {% endfor %}
+                {% else %}
+                    <tr>
+                        <td colspan='4'>등록된 게시물이 없습니다.</td>
+                    </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+    
 {% endblock hj-block %}
