@@ -40,9 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home.apps.HomeConfig',
-    'board1',
     'seoul',
     'fin',
+    'board',
+    'news',
 ]
 
 MIDDLEWARE = [
