@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home.apps.HomeConfig',
     'board.apps.BoardConfig',
+    'news.apps.NewsConfig',
     'seoul',
     'fin',
 ]
