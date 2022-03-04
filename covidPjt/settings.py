@@ -40,9 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home.apps.HomeConfig',
-    'board1',
-    'board2',
-    'board3',
+    'board.apps.BoardConfig',
     'seoul',
     'fin',
 ]

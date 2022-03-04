@@ -3,7 +3,6 @@ from django.http import JsonResponse
 from django.shortcuts import render
 import requests
 import json
-import xmltodict
 from fin.models import dailycovid, dailyvaccine
 import pandas as pd
 import cx_Oracle as ora
