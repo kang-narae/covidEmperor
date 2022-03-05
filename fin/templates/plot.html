@@ -5,20 +5,16 @@
 <!--요기 아래 블럭 속에 쓰면 메인 홈페이지에 바로 나옴-->
 {% block fin-block %} 
 <div id='fbody'>
-    <div id = 'fhead'>
-        <div id = 'ftitle'>
-            <h1> 코로나 진행 추이에 따른 주가 변동 분석
-    
-            </h1>
+    <div class='fhead'>
+        <div id='ftitle'>
+            <p>코로나 진행 추이에 따른 주가 변동 분석</p>
         </div>
-        <div id = 'finfo'>
+        <div id='finfo'>
             <p>
-                좌측의 y축은 코로나 발생 직전인 2020년 1월 20일의 주가를 100% 기준으로 합니다. <br>
-                우측의 y축은 코로나 발생추이에 따른 인구수입니다.<br>
-                x축은 국내 코로나 환자 첫 발생일인 2020년 1월 20일부터 2022년 1월 19일까지의 시기를 나타냅니다.
+            좌측의 y축은 코로나 발생 직전인 2020년 1월 20일의 주가를 100% 기준으로 합니다.<br>
+            우측의 y축은 코로나 발생추이에 따른 인구수입니다.<br>
+            x축은 국내 코로나 환자 첫 발생일인 2020년 1월 20일부터 2022년 1월 19일까지의 시기를 나타냅니다.
             </p>
-        </div>
-        <div id = 'freset'>
             <form action="" method="post" name="freset" id="fresetfrom"> 
                 <input type="button" value="RESET" id="fresetbnt">
             </form>

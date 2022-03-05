@@ -1,73 +1,100 @@
 #fbody {
-    margin:0 auto;
-    width:80%; border:1px solid black;
+    margin: 0 auto;
+    width: 80%;
+    border: 1px solid black;
 }
 
-#fhead {
-    width:70%; border:1px solid green;
-    margin:0 auto;
-    height: 200px;
+.fhead {
+    /* width: 70%; */
+    border: 3px solid green;
+    margin: 0 auto;
+    height: 150px;
 }
 
 #ftitle {
-    width:80%; border:1px solid red;
-    height: 100px;
+    /* width: 50%; */
+    border: 1px solid red;
+    height: 50px;
 }
 
-#finfo {
-    width:80%; border:1px solid pink;
+#ftitle p {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    margin: 5px auto;
+}
+
+/* #finfo {
+    width: 60%;
+    border: 3px solid pink;
     height: 100px;
+    float: left;
+    margin-left: 5%;
+} */
+
+#finfo p {
+    font-size: 18px;
+    margin: 5px 15%;
+    border: 1px solid purple;
+    width: 65%;
     float: left;
 }
 
-#freset {
-    width:10%; border:1px solid pink;
+#fresetfrom {
+    width: 5%;
     height: 30px;
+    border:1px solid pink;
     float: right;
-    margin-top: 50px;
 }
 
 #fmain {
-    width:100%; border:1px solid red;
+    width:100%;
+    border:1px solid red;
     height: 600px;
     margin:0 auto;
     clear: both;
 }
 
 #fstock {
-    width:15%; border:1px solid green;
+    width:15%;
+    border:1px solid green;
     height: 250px;
     float: left;
     margin-top: 120px;
 }
 
 #fchart {
-    width:69%; border:1px solid orange;
+    width:69%;
+    border:1px solid orange;
     height: 500px;
     float: left;
 }
 
 #fcovid {
-    width:15%; border:1px solid black;
+    width:15%;
+    border:1px solid black;
     height: 250px;
     float: right;
     margin-top: 120px;
 }
 
 #ftext {
-    width:70%; border:1px solid blue;
+    width:70%;
+    border:1px solid blue;
     height: auto;
     margin:0 auto;
 }
 
 #fimage {
-    width:80%; border:1px solid green;
+    width:80%;
+    border:1px solid green;
     height: 500px;
     margin:0 auto;
 }
 
 #fimagerow {
-    width:100%; border:1px solid yellow;
+    width:100%;
+    border:1px solid yellow;
     height: 300px;
     margin:0 auto;
 }
