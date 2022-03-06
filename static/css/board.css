@@ -19,7 +19,7 @@ table {
     border: 1px solid blue;
 }
 
-.tSpace tbody a {
+.tableBody tbody a {
     font-size: 16px;
     /* font-weight: 400; */
 }
@@ -34,6 +34,15 @@ td {
     border-bottom: 1px solid silver;
 }
 
-tbody tr:hover {
+.tableBody tr:hover {
     font-weight: 600;
+}
+
+#contentTitle {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#contentBody {
+    height: 500px;
 }

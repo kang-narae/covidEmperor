@@ -3,7 +3,7 @@
 <!--요기 아래 블럭 속에 쓰면 메인 홈페이지에 바로 나옴-->
 {% block hj-block %}
 <section>
-    <p id="boardTitle">c o m m u n i t y</p>
+    <p id="boardTitle">n o t i c e</p>
     <div class="tSpace">
       <table>
           <colgroup>
@@ -21,12 +21,12 @@
             </tr>
           </thead>
           <!--게시글 등록부분-->
-          <tbody>
+          <tbody class="tableBody">
             {% if blist %}
               {% for board in blist %}
                 <tr>
                   <td>{{board.b_no}}</td>
-                  <td><a href="#">{{board.b_title}}</a></td>
+                  <td><a href="{% url 'board:bview' board.b_no %}">{{board.b_title}}</a></td>
                   <td>{{board.b_date|date:'Y-m-d H:i'}}</td>
                   <td>{{board.b_hit}}</td>
                 </tr>
