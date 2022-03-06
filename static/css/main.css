@@ -98,7 +98,7 @@ header {
 .main {
     padding: 50px 0 50px 0;
     margin-top: 150px;
-    border: 3px solid green;
+    /* border: 3px solid green; */
 }
 
 /* 메인페이지 컨텐츠 */
@@ -131,25 +131,30 @@ h1, h2, p {
 }
   
 .foot {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     background: lightgray;
     height: 150px;
 }
   
 .logo {
-    border: 2px solid violet;
+    /* border: 2px solid violet; */
     float: left;
     width: 200px;
     height: 100px;
     text-align: center;
+    font-weight: 600;
     margin: 25px;
-    padding-top: 30px;
+    padding-top: 35px;
 }
 
 .spanbox {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 350px;
     float: left;
     margin: 1%;
 }
 
+footer {
+    position: relative;
+    bottom: 0;
+}
