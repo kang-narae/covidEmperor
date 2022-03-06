@@ -21,9 +21,9 @@
 </head>
 
 <body>
-    <div>
+    {% comment %} <div> {% endcomment %}
         <header>
-            <div>
+            {% comment %} <div> {% endcomment %}
                 <nav class="topMenu">
                     <ul>
                         <li id="topLogo"><a href="{% url 'main' %}">Covidiamond</a></li>
@@ -38,143 +38,51 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
+            {% comment %} </div> {% endcomment %}
         </header>
 
-
-        <div class="main">
-            <!--메인페이지 필드-->
-            {% block main-block %} 
-            {% endblock main-block %}
-    
-            <!--재욱 필드-->
-            {% block jw-block %} 
-            {% endblock jw-block %}
-    
-            <!--혜정 필드-->
-            {% block hj-block %} 
-            {% endblock hj-block %}
-    
-            <!--서울 필드-->
-            {% block seoul-block %} 
-            {% endblock seoul-block %}
-    
-            <!--주식 필드-->
-            {% block fin-block %} 
-            {% endblock fin-block %}
-        </div>
+        <div id="wrapper">
+            <div class="main">
+                <!--메인페이지 필드-->
+                {% block main-block %} 
+                {% endblock main-block %}
         
-        <footer>
-            <div class="foot">
-                <div class="logo">
-                    <a>(주)황제</a>
-                </div>
-                <span class="spanbox">
-                    <div>Web : 김재욱, 박혜정, 유승찬</div>
-                    <div>Seoul : 이승채, 최하진</div>
-                    <div>Finance : 강나래, 김수찬</div>
-                </span>
-                <span class="spanbox">
-                    <div>08390 서울 구로구 디지털로26길 111</div>
-                    <div>서울디지털인재개발원</div>
-                    <div>02) 581 - 2293 </div>
-                </span> 
+                <!--재욱 필드-->
+                {% block jw-block %} 
+                {% endblock jw-block %}
+        
+                <!--혜정 필드-->
+                {% block hj-block %} 
+                {% endblock hj-block %}
+        
+                <!--서울 필드-->
+                {% block seoul-block %} 
+                {% endblock seoul-block %}
+        
+                <!--주식 필드-->
+                {% block fin-block %} 
+                {% endblock fin-block %}
             </div>
-        </footer>
-
-        {% comment %} <footer class="footer section fp-auto-height fp-section fp-table fp-completely" data-fp-styles="null" style="height: 722px;"><div class="fp-tableCell" style="height: 722px;">
-            <div class="container01">
-                 <a href="/" class="logo"><img src="/img/logo_w.png" alt="셀리버리L&amp;H"></a>
-                <div class="right-box">
-                    <div class="txt-box">
-                        <ul class="line line1">
-                            <li><a href="#" class="spoqa-L">이용약관</a></li>
-                            <li><a href="#" class="spoqa-L">개인정보처리방침</a></li>
-                            <li><a href="#" class="spoqa-R">이메일무단수집거부</a></li>
-                            <li><a href="/contact" class="lato">CONTACT</a></li>
-                        </ul>
-                        <ul class="line line2 pc-ver">
-                            <li class="spoqa-R">
-                                <span class="subject">ADDRESS</span>
-                                <span class="con">서울시 마포구 성암로 179, B1 (03929)</span>
-                            </li>
-                            <li class="spoqa-R">
-                                <span class="subject">TEL</span>
-                                <span class="con">02-2170-7400</span>
-                            </li>
-                            <li class="spoqa-R">
-                                <span class="subject">FAX</span>
-                                <span class="con">02-303-7488</span>
-                            </li>
-                        </ul>
-                        <ul class="line line2 mo-ver">                          
-                            <li class="spoqa-R">
-                                <span class="subject">TEL</span>
-                                <span class="con">02-2170-7400</span>
-                            </li>
-                            <li class="spoqa-R">
-                                <span class="subject">FAX</span>
-                                <span class="con">02-303-7488</span>
-                            </li>
-                              <li class="spoqa-R">
-                                <span class="subject">ADDRESS</span>
-                                <span class="con">서울시 마포구 성암로 179, B1 (03929)</span>
-                            </li>
-                        </ul>
-                        <ul class="line line2 line3 pc-ver">
-                            <li class="spoqa-R">
-                                <span class="subject">업체명</span>
-                                <span class="con">(주)셀리버리 리빙앤헬스 이천공장</span>
-                            </li>
-                            <li class="spoqa-R">
-                                <span class="subject">대표자명</span>
-                                <span class="con">조대웅</span>
-                            </li>
-                            <li class="spoqa-R">
-                                <span class="subject">사업자등록번호</span>
-                                <span class="con">521-85-01838</span>
-                            </li>
-                            <li class="spoqa-R">
-                                <span class="subject">주소</span>
-                                <span class="con">경기도 이천시 백사면 청백리로 873</span>
-                            </li>
-                        </ul>
-                        <ul class="line line4 mo-ver">                          
-                            <li class="spoqa-R">
-                                <div>
-                                    <span class="subject">업체명</span>
-                                    <span class="con">(주)셀리버리 리빙앤헬스 이천공장</span>
-                                </div>
-                                <div>
-                                    <span class="subject">대표자명</span>
-                                    <span class="con">조대웅</span>
-                                </div>                          
-                            </li>    
-                            <li class="spoqa-R">
-                                <div>
-                                    <span class="subject">사업자등록번호</span>
-                                    <span class="con">521-85-01838</span>
-                                </div>
-                                <div>
-                                    <span class="subject">주소</span>
-                                    <span class="con">경기도 이천시 백사면 청백리로 873</span>
-                                </div>
-                            </li>
-                        </ul>     
-                        <p class="lato pc-ver">Copyright ⒞ 2022. Cellivery Living &amp; Health Inc. All Rights Reserved.</p>
+            
+            <footer>
+                <div class="foot">
+                    <div class="logo">
+                        <a>(주)황제</a>
                     </div>
-                    <div class="family">
-                        <p>Familly site</p>
-                        <img src="/img/select-down.png" alt="셀리버리L&amp;H">     
-                        <ul>
-                            <li><a href="http://www.cellivery.com/" class="spoqa-L" target="_blank">(주)셀리버리</a></li>
-                        </ul>
-                    </div>
-                    <p class="lato mo-ver">Copyright ⒞ 2022. Cellivery Living &amp; Health Inc. All Rights Reserved.</p>
+                    <span class="spanbox">
+                        <div>Web : 김재욱, 박혜정, 유승찬</div>
+                        <div>Seoul : 이승채, 최하진</div>
+                        <div>Finance : 강나래, 김수찬</div>
+                    </span>
+                    <span class="spanbox">
+                        <div>08390 서울 구로구 디지털로26길 111</div>
+                        <div>서울디지털인재개발원</div>
+                        <div>02) 581 - 2293 </div>
+                    </span> 
                 </div>
-            </div>
-        </footer> {% endcomment %}
-    </div>
+            </footer>
+        </div>
+    {% comment %} </div> {% endcomment %}
     
 </body>
 </html>
