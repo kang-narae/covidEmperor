@@ -14,8 +14,14 @@ table {
     margin: 0 auto 50px auto;
 }
      
-td {
-    border-bottom: 1px solid silver;    
+.tSpace {
+    height: 500px;
+    border: 1px solid blue;
+}
+
+.tSpace tbody a {
+    font-size: 16px;
+    /* font-weight: 400; */
 }
 
 th {
@@ -24,11 +30,10 @@ th {
     border-bottom: 2px solid darkgrey;
 }
 
-tbody tr:hover {
-    color: brown;
+td {
+    border-bottom: 1px solid silver;
 }
 
-.tSpace {
-    height: 500px;
-    border: 1px solid blue;
+tbody tr:hover {
+    font-weight: 600;
 }

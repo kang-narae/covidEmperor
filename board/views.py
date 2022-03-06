@@ -6,7 +6,7 @@ from django.db.models import Max,Min,Avg
 
 def blist(request):
     qs = Fboard.objects.all().order_by('-b_no')
-    paginator=Paginator(qs,5)
+    paginator=Paginator(qs,10)
     nowpage=int(request.GET.get('nowpage',1))
     blist=paginator.get_page(nowpage)
     context = {'blist':blist,'nowpage':nowpage}

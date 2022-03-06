@@ -11,5 +11,15 @@ class Fboard(models.Model):
     
     def __str__(self):
         return self.b_title
-    
-    
+
+
+class Comment(models.Model):
+    board = models.ForeignKey(Fboard,on_delete=models.CASCADE,null=True)
+    c_no = models.IntegerField(default=0,primary_key=True)
+    c_pw = models.CharField(max_length=10,blank=True)
+    c_content = models.TextField()
+    c_date = models.DateTimeField(default=datetime.now(),null=True,blank=True)
+    c_spw = models.IntegerField(default='1234')
+
+    def __str__(self):
+        return self.c_content

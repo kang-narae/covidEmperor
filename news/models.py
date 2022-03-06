@@ -1,6 +1,7 @@
 from django.db import models
 from datetime import datetime
 
+
 class News(models.Model):
     n_no = models.IntegerField(default=0,primary_key=True)
     n_title = models.CharField(max_length=1000)
